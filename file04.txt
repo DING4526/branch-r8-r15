@@ -1,4 +1,5 @@
 This is file04 in B1.
-Modify files on B3.
+B3 and B2 merged change in file04.
 B3B3B3B3B3B3B3B3B3B3B3.
-B3 different change in file04
+B2B2B2B2B2B2B2B2B2B2B2B2.
+B3 and C4 merged change in file04.

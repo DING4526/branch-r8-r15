@@ -1,2 +1,2 @@
 This is file03 in B1.
-B3 different change in file03
+B3 and C4 merged change in file03.
