@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Chatroom</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Auth Screen -->
+  <div id="auth-screen" class="screen">
+    <div class="login-box">
+      <h1>Simple Chatroom</h1>
+      <div class="auth-tabs">
+        <button id="tab-login" class="active">Login</button>
+        <button id="tab-register">Register</button>
+      </div>
+      <div id="auth-error" class="auth-error hidden"></div>
+
+      <!-- Login Form -->
+      <div id="login-form">
+        <input type="text" id="login-username" placeholder="Username" maxlength="20" autofocus>
+        <input type="password" id="login-password" placeholder="Password" maxlength="50">
+        <button id="login-btn" class="auth-submit">Login</button>
+      </div>
+
+      <!-- Register Form -->
+      <div id="register-form" class="hidden">
+        <input type="text" id="reg-username" placeholder="Username" maxlength="20">
+        <input type="password" id="reg-password" placeholder="Password" maxlength="50">
+        <input type="password" id="reg-password2" placeholder="Confirm Password" maxlength="50">
+        <button id="register-btn" class="auth-submit">Register</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Screen -->
+  <div id="chat-screen" class="screen hidden">
+    <div class="chat-layout">
+      <!-- Sidebar: Online Users -->
+      <aside class="sidebar">
+        <div class="user-info">
+          <span id="current-user"></span>
+          <button id="logout-btn">Logout</button>
+        </div>
+        <h3>Online Users (<span id="user-count">0</span>)</h3>
+        <ul id="user-list"></ul>
+      </aside>
+
+      <!-- Main Chat Area -->
+      <main class="chat-main">
+        <div id="message-area"></div>
+        <div class="input-bar">
+          <input type="text" id="message-input" placeholder="Type a message..." maxlength="500">
+          <button id="send-btn">Send</button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
